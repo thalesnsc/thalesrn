@@ -1,0 +1,573 @@
+*,
+*::before,
+*::after{
+   list-style-type: none;
+   text-decoration: none;
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   max-width: 100vw;
+ }
+
+
+ /*scrool-bar area*/
+::-webkit-scrollbar{
+  width: 11px;   /* largura */
+  height: 3px;  /* altura */
+}
+
+::-webkit-scrollbar-track {
+  background: #0E071F;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7213FD;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5a0fcc;
+}
+
+
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+body{
+  background-color: #0E071F;
+  color: #BDBCCA;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Varela Round', sans-serif;
+ }
+
+
+ /* container */
+ .container {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+ /* header - navbar */
+ .navbar{
+  background-color: #0E071F;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  z-index: 1000;
+  padding: 35px 8%;
+ }
+
+ .contatos{
+  display: flex;
+ }
+
+ .contatos img{
+   width: 37px;
+   display: block;
+ }
+
+ .contatos .contatos-github{
+  display: block;
+}
+
+ .contatos .contatos-linkedin{
+  padding-left: 30px;
+ }
+
+.menu{
+ display: flex;
+ flex-direction: row;
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+.menu li{
+  color: #7213FD;
+  margin: 0px 25px;
+}
+
+.menu li a:hover{
+  text-shadow: 0 0 30px #DFCADF;
+  transition: 0.3s;
+}
+
+
+ /* main ↓ */
+.main{
+  min-height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+ /*landpage*/
+.landpage{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding-top: 270px;
+  margin:  0px 150px;
+ }
+
+ /*tittle*/
+.landpage .tittle{
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column;
+ }
+
+.landpage .tittle h1{
+   font-size: 95px;
+   font-weight: 900;
+ }
+
+.landpage .tittle h1 #name{
+  color: #7213FD;
+}
+.landpage .tittle h2{
+  font-size: 22px;
+  color: #BDBCCA;
+  width: auto;
+  height: auto;
+  padding-left: 5px;
+}
+
+/*aboutme*/
+.landpage .aboutme{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 500px;
+  padding: 0px;
+  margin-top: 280px;
+  margin-left: 280px;
+  margin-right: 280px;
+  background: #130D27;
+  backdrop-filter: blur(12px);
+  border-radius: 50px;
+  border: 1px solid rgba(113, 19, 253, 0.1);
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 93);
+}
+
+.aboutme-profile-texts{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.landpage .aboutme .aboutme-profile-texts h1{
+  color: #7213FD;
+  font-size: 77px;
+  text-transform: uppercase;
+}
+
+.landpage .aboutme .aboutme-profile-texts .aboutme-profile--text{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  height: 220px;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: left;
+  color: #BDBCCA;
+}
+
+.aboutme-profile-texts--trace{
+  width: 160px;
+  height: 2px;
+  background-color: #7213FD;
+}
+
+
+.landpage .aboutme .aboutme-profile--image img{
+  width: 280px;
+  height: 300px;
+  border: 2px solid #7213FD;
+  border-radius: 50%;
+  box-shadow: 1px 1px 100px #2F0C69;
+}
+
+
+/*projects 1&2*/
+.projects-title{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  color: #7213FD;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.projects1{
+  display: flex;
+  margin-top: 95px;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.projects1 .projects-titles{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: #7213FD;
+  margin-top: 30px;
+}
+
+.projects1  img{
+  width: 230px;
+  height: 180px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px #7213FD solid;
+}
+
+.projects1  img:hover{
+  border: 1px #ffffff00 solid;
+  box-shadow: 1px 1px 50px rgba(98, 0, 255, 0.5);
+  transition: 0.5s;
+}
+
+.projects1 .projects-subtitle{
+  display: flex;
+  text-align: center;
+  margin: 35px 0px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0px 13px;
+  color: #BDBCCA;
+  font-weight: bold;
+}
+
+.projects1 .projects-awax{
+  display: flex;
+  width: 300px;
+  height: 500px;
+  padding: 0px 10px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #130D27;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 93);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+}
+
+.projects1-calculator{
+  display: flex;
+  width: 300px;
+  height: 500px;
+  padding: 0px 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #130D27;
+  border-radius: 50px;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 93);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+}
+
+.projects1 .projects1-B7Burguer{
+  display: flex;
+  width: 300px;
+  height: 500px;
+  padding: 0px 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #130D27;
+  border-radius: 50px;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 93);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+}
+
+.projects2{
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.projects2 .projects2-titles{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: #7213FD;
+  margin-top: 30px;
+}
+
+.projects2 img{
+  width: 230px;
+  height: 180px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px #7213FD solid;
+}
+
+.projects2  img:hover{
+  border: 1px #ffffff00 solid;
+  box-shadow: 1px 1px 50px rgb(98, 0, 255);
+  transition: 0.5s;
+}
+
+.projects2 .projects2-subtitle{
+  display: flex;
+  text-align: center;
+  margin: 35px 0px;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0px 13px;
+  color: #BDBCCA;
+  font-weight: bold;
+}
+
+
+.projects2 .projects2-mystarbucks{
+  display: flex;
+  width: 300px;
+  height: 500px;
+  padding: 0px 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #130D27;
+  border-radius: 50px;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 93);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+}
+
+.projects2 .projects2-loginpage{
+  display: flex;
+  width: 300px;
+  height: 500px;
+  padding: 0px 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #130D27;
+  border-radius: 50px;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 93);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+}
+
+
+/*skills*/
+ .skills-tittle{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  margin-top: 450px;
+  font-size: 30px;
+  font-weight: bold;  
+  color: #7213FD;
+}
+
+.skills{
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #130D27;
+  width: 100vw;
+  padding: 10px 0px;
+  border: 1px solid rgba(113, 19, 253, 0.16);
+
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.skills-area{
+  display: flex;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skills-area img{
+  width: 60px;
+  height: 60px;
+}
+
+
+/*experiences*/
+.experiences{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 430px 0px 110px 0px;
+}
+
+.experiences h3{
+  padding-bottom: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #7213FD;
+}
+
+.experiences h2{
+  font-size: 62px;
+  color: #9f13fd;
+  -webkit-text-stroke-width: 1px; /* Largura da borda */
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*footer area*/
+ .footer-area{
+  font-size: 32px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 170px;
+  padding-top: 7px;
+  color: #BDBCCA;
+  background-color: #0a0516;
+ }
+
+
+/*media-query area*/
+
+/*media-query aboutme area*/
+ @media (max-width: 1630px) {
+ .landpage .aboutme .aboutme-profile--image img{
+  width: 180px;
+  height: 200px;
+}
+}
+
+ @media (max-width: 1538px) {
+ .landpage .aboutme .aboutme-profile--image img{
+  width: 140px;
+  height: 150px;
+}
+}
+
+ @media (max-width: 1500px) {
+ .landpage .aboutme .aboutme-profile--image img{
+  width: 0px;
+  height: 0px;
+  border: 0px solid #130D27;
+  justify-content: center;
+}
+}
+
+ @media (max-width: 1400px) {
+ .landpage .aboutme{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+ .aboutme-profile-texts{
+  align-items: center;
+}
+}
+
+ @media (max-width: 1306px) {
+.landpage .aboutme .aboutme-profile-texts h1{
+  font-size: 70px;
+}
+}
+
+ @media (max-width: 1282px) {
+.landpage .aboutme .aboutme-profile-texts h1{
+  font-size: 60px;
+}
+.landpage .aboutme .aboutme-profile-texts .aboutme-profile--text{
+  font-size: 18px;
+  text-align: center;
+}
+}
+
+ @media (max-width: 1274px) {
+ .projects1{
+  display: flex;
+  margin-top: 95px;
+  padding: 30px;
+  justify-content: space-between;
+  width: 1000px;
+  height: 450px;
+  align-items: center;
+}
+}
+
+ @media (max-width: 1232px) {
+.landpage .aboutme .aboutme-profile-texts h1{
+  font-size: 60px;
+}
+.landpage .aboutme .aboutme-profile-texts .aboutme-profile--text{
+  font-size: 16px;
+  text-align: center;
+  width: 350px;
+  height: 135px;
+}
+}
+
+ @media (max-width: 1204px) {
+ .landpage .aboutme{
+  height: 450px;
+ }
+
+.landpage .aboutme .aboutme-profile-texts h1{
+  font-size: 50px;
+}
+.landpage .aboutme .aboutme-profile-texts .aboutme-profile--text{
+  font-size: 16px;
+  text-align: center;
+  width: 350px;
+  height: 135px;
+}
+}
+
+ @media (max-width: 1188px) {
+.landpage .aboutme .aboutme-profile-texts .aboutme-profile--text{
+  font-size: 14px;
+  text-align: center;
+  width: 250px;
+  height: 140px;
+}
+}
+
+ @media (max-width: 1146px) {
+.landpage .aboutme{
+  height: 418;
+}
+
+.landpage .aboutme .aboutme-profile-texts h1{
+  font-size: 40px;
+}
+}
